@@ -5,7 +5,10 @@ public class Main {
     long amount = 1000_60;
     boolean registered = true;
 
-    service.calculate(amount, registered);
+    long answer = service.calculate(amount, registered);
+    long expected = 30;
+    if (answer == expected)
+      System.out.println( "Все верно");
   }
 }
 
